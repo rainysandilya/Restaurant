@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="./food.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&family=Oswald&family=Saira+Extra+Condensed:wght@200&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&family=Saira+Extra+Condensed:wght@200&display=swap"
+    rel="stylesheet">
+  <title>Restaurant App</title>
+  <link rel="shortcut icon" href="./icon.jpg" type="image/x-icon">
+</head>
+
+<body>
+  <div class="parent">
+    <!--Navigation bar-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="./logo.png" width="70px" alt="unavailable">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link " href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Restaurant</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ">Contact us</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!--Header-->
+    <header>
+      <div class="content p-3">
+        <div class="border rounded mb-3 title">
+          <!--title-->
+          <h1 class="display-5">Madhurai Restaurant </h1>
+          <p>Dine your favourite dishes in our restaurant</p>
+        </div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFWMwqiN0J0FfPd_u-Q4m817Xus0fVMszV9g&usqp=CAU" class="rounded-circle d-none d-sm-block" width="250px" height="250px" alt="unavailable">
+        <!--Banner-->
+        <div class="w-50 mx-auto dispaly-6 text-center banner">
+          <h3>Taste your favourite food</h3>
+        </div>
+      </div>
+    </header>
+    <!--maincontent-->
+    <div class="container main">
+      <!--grid of cards-->
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 my-5 gy-5">
+        <div class="col">
+          <div class="card h-100">
+            <img src="./biryani.jpg" class="w-100 card-img-top">
+            <div class="card-body text-center">
+              <h1 class="dish-name">Biryani</h1>
+              <p>Place the order</p>
+              <button class="btn btn-outline-warning" data-bs-target="#bar" data-bs-toggle="collapse">
+                Click here
+              </button>
+              <div class="collapse" id="bar">
+                <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <a class="nav-link " href="#">Chicken Biryani</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Mutton Biryani</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Prawns Biryani</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link ">Fish Biryani</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--item2-->
+        <div class="col">
+          <div class="card h-100">
+            <img src="./burger.jpg" class="w-100 card-img-top">
+            <div class="card-body text-center">
+              <h1 class="dish-name">Burger</h1>
+              <p>Place the order</p>
+              <button class="btn btn-outline-warning" data-bs-target="#bar-2" data-bs-toggle="collapse">
+                Click here
+              </button>
+              <div class="collapse" id="bar-2">
+                <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <a class="nav-link " href="#">Chicken whopper</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Crispy Chicken</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Chicken Keema crunch</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link ">Veg Burger</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--item3-->
+        <div class="col">
+          <div class="card h-100">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi9LodRUH_jmBJ4ro7MhByl6hH1G7RVXsn7A&usqp=CAU" class="w-100 card-img-top">
+            <div class="card-body text-center">
+              <h1 class="dish-name">Drinks</h1>
+              <p>Place the order</p>
+              <button class="btn btn-outline-warning" data-bs-target="#bar-3" data-bs-toggle="collapse">
+                Click here
+              </button>
+              <div class="collapse" id="bar-3">
+                <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <a class="nav-link " href="#">Coca cola</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Thumbsup</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Sprite</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link ">Fanta</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--item4-->
+        <div class="col">
+          <div class="card h-100">
+            <img src="./donuts.jpg" class="w-100 card-img-top">
+            <div class="card-body text-center">
+              <h1 class="dish-name">Donuts</h1>
+              <p>Place the order</p>
+              <button class="btn btn-outline-warning" data-bs-target="#bar-4" data-bs-toggle="collapse">
+                Click here
+              </button>
+              <div class="collapse" id="bar-4">
+                <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <a class="nav-link " href="#">Coco-nut</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Chocolate</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Almond chip</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link ">Cinnamon Bun</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--item5-->
+        <div class="col">
+          <div class="card">
+            <img src="./fries.jpg" class="w-100 card-img-top">
+            <div class="card-body text-center">
+              <h1 class="dish-name">French fries</h1>
+              <p>Place the order</p>
+              <button class="btn btn-outline-warning" data-bs-target="#bar-5" data-bs-toggle="collapse">
+                Click here
+              </button>
+              <div class="collapse" id="bar-5">
+                <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <a class="nav-link " href="#">Peri peri fries</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Masala fries</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Salted potatofries</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link ">Potato fries</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--item6-->
+        <div class="col h-100">
+          <div class="card">
+            <img src="./pizza.jpg" class="w-100 card-img-top">
+            <div class="card-body text-center">
+              <h1 class="dish-name">Pizza</h1>
+              <p>Place the order</p>
+              <button class="btn btn-outline-warning" data-bs-target="#bar-6" data-bs-toggle="collapse">
+                Click here
+              </button>
+              <div class="collapse" id="bar-6">
+                <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <a class="nav-link " href="#">Crispy chicken pizza</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Margherita pizza</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">BBQ chicken pizza</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link ">Pepperoni pizza</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--item7-->
+        <div class="col">
+          <div class="card h-100">
+            <img src="./shawarma.jpg" class="w-100 card-img-top">
+            <div class="card-body text-center">
+              <h1 class="dish-name">Shawarma</h1>
+              <p>Place the order</p>
+              <button class="btn btn-outline-warning" data-bs-target="#bar-7" data-bs-toggle="collapse">
+                Click here
+              </button>
+              <div class="collapse" id="bar-7">
+                <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <a class="nav-link " href="#">Chicken shawarma</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Roasted shawarma</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Spl shawarma</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link ">Cheesemalai shawarma</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--item8-->
+        <div class="col">
+          <div class="card h-100">
+            <img src="./icecream.jpg" class="w-100 card-img-top">
+            <div class="card-body text-center">
+              <h1 class="dish-name">Ice cream</h1>
+              <p>Place the order</p>
+              <button class="btn btn-outline-warning" data-bs-target="#bar-8" data-bs-toggle="collapse">
+                Click here
+              </button>
+              <div class="collapse" id="bar-8">
+                <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <a class="nav-link " href="#">Chocolate</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Vanilla</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Strawberry</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link ">Butterstoch</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Horizontal card-->
+    <div class="card mb-2">
+      <div class="row">
+        <div class="col-sm-4">
+          <img src="./images (1).jpg" class="w-100">
+        </div>
+        <div class="col-sm-8 text-center align-items-center bg-warning text-white">
+          <h1>One cannot think well, love well, sleep well if one has not dined well.</h1>
+               <p>Our restaurant provides the best quality food. Ensures the best quality with 100% fresh ingrediants
+               </p>
+        </div>
+      </div>
+    </div>
+    <!--items carousel-->
+
+       <div class="carousel slide carousel-fade d-none d-sm-block" data-bs-ride="carousel " id="images">
+        <!--indicator-->
+        <div class="carousel-indicators">
+        <button data-bs-target="#images" data-bs-slide-to="0" class="active"></button>
+        <button data-bs-target="#images" data-bs-slide-to="1" class="active"></button>
+        <button data-bs-target="#images" data-bs-slide-to="2" class="active"></button>
+        <button data-bs-target="#images" data-bs-slide-to="3" class="active"></button>
+        </div>
+         <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="2000">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS8p9sgVXxUKRkP_Msftim2wz_TtKhbAhGpg&usqp=CAU" width="100%" height="500px" alt="unavil">
+                <div class="carousel-caption">
+                    <h2>Ambience</h2>
+                    
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="1000">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbv2ZvZz-lcTJgYqHWTr2fuW5COcdxWbF4SA&usqp=CAU" width="100%" height="500px" alt="unavil">
+                <div class="carousel-caption">
+                    <h2> Dining hall</h2>
+                    
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8ZHcA-sbBn_xS7iUVWtsHrygj8ASsfEZ_Og&usqp=CAU" width="100%" height="500px" alt="unavil">
+                <div class="carousel-caption">
+                    <h2>Dining hall</h2>
+                    
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPV2pwTUbgqJhoOJU5DZhu3sWmEDNaGhyu5A&usqp=CAU" width="100%" height="500px" alt="unavil">
+                <div class="carousel-caption">
+                    <h2>Outside view</h2>
+                  
+                </div>
+            </div>
+         </div>
+          <!--Button for prev and next-->
+          <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#images">
+            <span class="carousel-control-prev-icon"></span>
+         </button>
+         <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#images">
+            <span class="carousel-control-next-icon"></span>
+         </button>
+       </div>
+    <!--footer-->
+    <footer>
+      <div class="address">
+        <p class="lead">Narsipatnam</p>
+        <p class="lead">99979</p>
+        <h2>Vizag</h2>
+        <h2>Andhrapradesh</h2>
+      </div>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZEcRmqlMSSIwMTniL6CKdjQ_Jt4hXxVBg5A&usqp=CAU"
+        class="footer-img">
+      <div class="address">
+        <p class="lead">Kphb</p>
+        <p class="lead">9999</p>
+        <h2>hyderabad</h2>
+        <h2>Telangana</h2>
+      </div>
+    </footer>
+    </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
